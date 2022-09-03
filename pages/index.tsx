@@ -1,11 +1,10 @@
-import type { NextPage } from 'next'
-import Profile from "../components/profile"
-import ProjectPreview, {ProjectPreviewInterface} from "../components/project_preview"
+import type { NextPage } from "next";
+import Profile from "../components/profile";
+import ProjectPreview from "../components/project_preview";
 
 const Home: NextPage = () => {
+  const projectMetadataArray = [];
 
-  const projectMetadataArray = []
-  
   projectMetadataArray.push(
     {
       title: "Kubernetes Home Lab",
@@ -13,14 +12,14 @@ const Home: NextPage = () => {
       linkUrl: "/kubernetes_home_lab",
       image: "/containers.jpg",
     },
- 
+
     {
       title: "Ansible Oracle Collection",
       desc: "Collection of Oracle plugins for Ansible.",
       linkUrl: "/ansible_oracle_collection",
       image: "/tower.jpg",
-    },
-  )
+    }
+  );
 
   const projectPreviewElements = [];
 
